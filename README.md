@@ -2,7 +2,11 @@
 
 # musiCal Tools: website
 
-This is the site for **musiCal** project. I'm getting old and over time I've already played with many tools related to music analysis and composition. This website attempts to bring all those tools, new and old, together in one place.  
+This is the site for **musiCal** project. I'm getting old and over time I've already played with many tools related
+to music analysis and composition. This website attempts to bring all those tools, new and old, together in one place.
+Many of the developments of this projects are related to my work as teaching assistant at
+[Gustavo García Novo](https://gustavogarcianovo.com/)
+'s chair of **Contemporary music techniques** at [UNA](https://musicalesysonoras.una.edu.ar/).   
 
 Visit site at [musicaltools.gitlab.io](https://musicaltools.gitlab.io).  
 Feel free to contact me by [mail](mailto:rodrigovalla@protonmail.ch) or reach me in

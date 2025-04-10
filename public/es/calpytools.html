@@ -39,13 +39,43 @@
 				<h1>chain_cmd.py</h1>
 				<p>El programa para crear Chain()s directamente en la terminal.</p>
 			</div>
+			<div class="box grey">
+				<h1>Matrix()</h1>
+				<p>La clase para contruir y operar con matrices de alturas. Podés construir matrices simples, a partir
+				de cadenas o por ciclo de transporte. Podés transportarlas, invertirlas y mezclarlas.</p>
+				<pre>m = Matrix(12, "")
+m.random_matrix(max_cell, w, h)
+m.translation(5)
+m.invert()</pre>
+			</div>
+			<div class="box red">
+				<h1>Counterpoint()</h1>
+				<p>La clase para crear contrapuntos aleatorios. Podés elegir libremente la cantidad de voces. Podés
+				crearlos completamente al azar o usando listas de control o cadenas de Markov. Los contrapuntos se
+				construyen en partituras de <a href="https://www.music21.org/music21docs/about/index.html">music21</a>.</p>
+				<pre>c = Counterpoint(title, ...)
+c.add_cycle()
+c.save_score("name")</pre>
+			</div>
+			<div class="box blue">
+				<h1>Texture()</h1>
+				<p>La clase para crear texturas a partir de matrices (instancias de Matrix()). Con una matriz controlás
+				las alturas. Los valores de duración son aleatorios. Podés elegir 3 tipos de textura diferentes. Las
+				texturas se construyen en partituras de <a href="https://www.music21.org/music21docs/about/index.html">music21</a>.</p>
+				<pre>t = Texture(title, ..., matrix, ...)
+for i in range(10):
+  m.shuffle_status()
+  m.translation(3)
+  t.add_cycle()
+t.save_score("name")</pre>
+			</div>
 			<div class="box">
 				<h1>+ info</h1>
-				<p>Todo el código está <a href="https://gitlab.com/musicaltools/calpytools">acá</a>. Si tenés
-				problemas para usar alguna de estas herramientas contactame. Si encontrás errores en el código,
-				por favor, avisame.</p>
+				<p>Todo el código está <a href="https://gitlab.com/musicaltools/calpytools">acá</a>. ¡Mirá la
+				carpeta de ejemplos! Si tenés problemas para usar alguna de estas herramientas contactame.
+				Si encontrás errores en el código, por favor, avisame.</p>
 				<p><a href="mailto:rodrigovalla@protonmail.ch"><button class="small">escribí</button></a>
-				<a href="/index_en.html"><button class="small">volvé</button></a></p>
+				<a href="/index.html"><button class="small">volvé</button></a></p>
 			</div>
 		</div>
 	</div>

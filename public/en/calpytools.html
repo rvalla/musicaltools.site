@@ -37,10 +37,40 @@
 			<h1>chain_cmd.py</h1>
 			<p>An utility to create Chain()s directly on a terminal.</p>
 		</div>
+					<div class="box grey">
+				<h1>Matrix()</h1>
+				<p>The class to build and operate with pitch matrices. You can build several types of matrix. You can
+				invert, shuffle or translate them.</p>
+				<pre>m = Matrix(12, "")
+m.random_matrix(max_cell, w, h)
+m.translation(5)
+m.invert()</pre>
+			</div>
+			<div class="box red">
+				<h1>Counterpoint()</h1>
+				<p>The class to build random counterpoints of any number of voices. They can be totally random or
+				you can use control lists or Markov chains. The counterpoints are built in a score from
+				<a href="https://www.music21.org/music21docs/about/index.html">music21</a>.</p>
+				<pre>c = Counterpoint(title, ...)
+c.add_cycle()
+c.save_score("name")</pre>
+			</div>
+			<div class="box blue">
+				<h1>Texture()</h1>
+				<p>The class to create musial textures from a matrix (an instance of Matrix()). Pitch is then controlled,
+				the rhythm is random. There are 3 types of textures. The textures are built in a score from
+				<a href="https://www.music21.org/music21docs/about/index.html">music21</a>.</p>
+				<pre>t = Texture(title, ..., matrix, ...)
+for i in range(10):
+  m.shuffle_status()
+  m.translation(3)
+  t.add_cycle()
+t.save_score("name")</pre>
+			</div>
 		<div class="box">
 			<h1>+ info</h1>
-			<p>All the code is <a href="https://gitlab.com/musicaltools/calpytools">here</a>. If you
-			need help feel free to contact me. If you find errors in the code, please tell me.</p>
+			<p>All the code is <a href="https://gitlab.com/musicaltools/calpytools">here</a>. Look the examples folder!
+			If you need help feel free to contact me. If you find errors in the code, please tell me.</p>
 			<p><a href="mailto:rodrigovalla@protonmail.ch"><button class="small">write</button></a>
 			<a href="/index_en.html"><button class="small">back</button></a></p>
 		</div>
